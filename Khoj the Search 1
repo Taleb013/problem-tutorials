@@ -1,0 +1,52 @@
+#include <bits/stdc++.h> 
+#include <sstream> ////submitted by taleb
+using namespace std;
+#define all(x) x.begin(), x.end()
+ #define allr(x) x.rbegin(), x.rend()
+#define ll long long
+const ll mod =1e9+7;
+const int N = 2000005;
+#define vp vector<pair<int,int>>
+#define vll vector<ll>
+#define pb push_back
+constexpr int inf = 1E9;
+#define fr(i,a,b) for(int i = a; i < b; i++)
+#define in(v)  for (auto &i : v)  cin >> i;
+#define coutv(v) for (auto &i : v)  cout << i << ' ';
+#define uni(a)  a.erase(unique(all(a)),a.end());
+#define nl cout << endl;
+#define gcd(a,b) __gcd(a,b);
+#define lcm(a,b) 1LL*a*b/gcd(a,b);
+#define fast()  ios_base::sync_with_stdio(false); cin.tie(NULL);
+#define yes cout<<"YES"<<endl; 
+#define no cout<<"NO"<<endl;
+/*
+1. Think Greedy
+2. Think Brute Force
+3. Think solution in reverse order
+4. Think DP [ check constraints carefully ]
+5. Check base case+s for DP and prove solution for Greedy
+6. Think Graph
+*/
+
+void solve()
+{
+ string a,b; 
+ cin>>a>>b;
+ int la=a.size(),lb=b.size();
+ for(int i=0;i+lb<=la;i++)
+ {
+  if(a.substr(i,lb)==b){ cout<<i<<endl; return;}
+ }
+} 
+int main()
+{
+  fast();
+  int tc=0; 
+   cin>>tc;
+  fr(i, 0, tc)
+  {
+    // cout << "Case " << i + 1 << ": ";
+    solve();
+  }
+}
